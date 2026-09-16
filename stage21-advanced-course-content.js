@@ -2,6 +2,7 @@
    Stage 22 is the active expanded course-content layer.
    Stage 23 adds the visual Learning Path roadmap.
    Stage 24 adds local lesson/progress tracking.
+   Stage 25 adds XP, levels and achievements.
 */
 (function () {
   'use strict';
@@ -20,4 +21,5 @@
   load('stage22-remaining-courses.js?v=1');
   load('stage23-learning-path.js?v=1');
   load('stage24-learning-progress.js?v=1');
+  load('stage25-xp-achievements.js?v=1');
 })();
