@@ -29,7 +29,17 @@
         return true;
     }
 
+    function loadAdvancedTheory() {
+        if (document.getElementById('stage18-advanced-script')) return;
+        const script = document.createElement('script');
+        script.id = 'stage18-advanced-script';
+        script.src = 'stage18-advanced-course-theory.js?v=1';
+        script.defer = true;
+        document.head.appendChild(script);
+    }
+
     function boot() {
+        loadAdvancedTheory();
         if (activate()) return;
         let tries = 0;
         const timer = setInterval(function () {
