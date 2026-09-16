@@ -1,7 +1,7 @@
 /* CyberLab Stage 21 compatibility loader
-   Stage 22 is now the active expanded course-content layer.
+   Stage 22 is the active expanded course-content layer.
    Stage 23 adds the visual Learning Path roadmap.
-   This file remains loaded by index.html so the existing homepage does not need to be replaced.
+   Stage 24 adds local lesson/progress tracking.
 */
 (function () {
   'use strict';
@@ -19,4 +19,5 @@
   load('stage22-expanded-lessons.js?v=2');
   load('stage22-remaining-courses.js?v=1');
   load('stage23-learning-path.js?v=1');
+  load('stage24-learning-progress.js?v=1');
 })();
