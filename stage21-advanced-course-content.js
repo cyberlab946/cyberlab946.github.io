@@ -4,6 +4,7 @@
    Stage 24 adds local lesson/progress tracking.
    Stage 25 adds XP, levels and achievements.
    Stage 21 adds safe activation of supported course cards.
+   Stage 26 adds the professional course experience layer.
 */
 (function () {
   'use strict';
@@ -24,4 +25,5 @@
   load('stage24-learning-progress.js?v=1');
   load('stage25-xp-achievements.js?v=1');
   load('stage21-course-completion.js?v=1');
+  load('stage26-course-experience.js?v=1');
 })();
