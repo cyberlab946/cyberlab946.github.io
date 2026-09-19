@@ -75,8 +75,8 @@
     enhance();
     setTimeout(enhance, 500);
     setTimeout(enhance, 1500);
-    const observer = new MutationObserver(enhance);
-    observer.observe(document.body, { childList: true, subtree: true });
+    // Do not observe every DOM mutation here: enhance() updates the progress
+    // panel itself, which would trigger the observer again and freeze the page.
     window.addEventListener('storage', enhance);
   }
 
